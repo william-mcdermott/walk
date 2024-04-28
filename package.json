@@ -1,0 +1,15 @@
+{
+  "name": "walk",
+  "version": "1.0.0",
+  "description": "deciding on my walk route",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "william",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^3.1.7"
+  }
+}
