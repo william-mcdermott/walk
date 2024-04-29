@@ -2,8 +2,8 @@ const walk = require('./walk');
 const cron = require('cron');
 const { createServer } = require('node:http');
 const hostname = '127.0.0.1';
-const port = 3000;
-let walkRoute = ['1', '2', '3A'];
+const port = process.env.PORT || 3000;
+let walkRoute = walk.shuffleArray(walk.generateWalk());
 let timestamp = new Date();
 
 const job = new cron.CronJob(
